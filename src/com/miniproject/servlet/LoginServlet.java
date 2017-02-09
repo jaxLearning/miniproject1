@@ -27,28 +27,29 @@ import javax.servlet.http.Part;
 
 import com.miniproject.pojos.Actor;
 import com.miniproject.pojos.Login;
+import com.miniproject.service.LoginValidation;
 
 public class LoginServlet extends HttpServlet {
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 	
-		String uname = req.getParameter("uname");
-		String pwd= req.getParameter("pwd");
+		//String uname = req.getParameter("uname");
+		//String pwd= req.getParameter("pwd");
 		
 		Login a = new Login();
-		a.setUname(uname);
-		a.setPwd(pwd);
-		System.out.println(a.isLoginSusscess());
-		if (a.isLoginSusscess() == true) 
+		a.setUname(req.getParameter("uname"));
+		a.setPwd( req.getParameter("pwd"));
+		LoginValidation l = new LoginValidation();
+		if ((l.isLoginSuccessful(a.getUname(), a.getPwd())) == true)
 		{
-			req.setAttribute("s", "successfully logged into to Actor");
+			req.setAttribute("s", a.getUname()+" successfully logged into to actor portal");
 		req.getRequestDispatcher("actor.jsp").forward(req, resp);
 		}
 		else
 		{
-			req.setAttribute("s", "Failed log in into to Actor");
-			req.getRequestDispatcher("actor.jsp").forward(req, resp);
+			req.setAttribute("s", a.getUname() + " failed log in into to actor..either username or password incorrect");
+			req.getRequestDispatcher("loginfailed.jsp").forward(req, resp);
 		}
 			
 	}

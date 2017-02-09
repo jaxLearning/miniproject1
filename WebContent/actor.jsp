@@ -7,14 +7,38 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-<%
-String value=(String)request.getAttribute("s");
-
-%>
-
-
+<div><% String value=(String)request.getAttribute("s"); %>
 <%=value %>
+</div>
+<div>
+<h1><p align="center"><big><i>Actor Information Page</i></big></p></h1>
+</div>
+
+<div>
+<form>
+		Actor First Name:	<input name="fname">
+		
+		<br><br>Actor Last Name: <input name = "lname"><br><br><br> 
+		<input type="submit" value="Search">
+		
+		</form></div>
+		
+<div>
+<table style="width: 940px; " align="center" class="results">
+<tr>
+<td align="Center"><b><big>Actor Id
+</big></b><td><p align="center"><b><big>First Name
+</big></b></p><td><p align="center"><b><big> Last Name
+</big></b></p></td>
+</tr><br>
+<tbody>
+<tr>
+<% String results= (String)request.getAttribute("results") %>
+<%=results %>
+</tr>
+</tbody>
+</table>
+</div>
 
 </body>
 </html>
