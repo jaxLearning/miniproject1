@@ -23,7 +23,7 @@ public class DbQuery  {
 	
 	
 	//function for Select Query
-	public  void selectQuery(String sql) throws SQLException, InstantiationException, IllegalAccessException
+	public  ArrayList<Actor> selectQuery(String sql) throws SQLException, InstantiationException, IllegalAccessException
 	{
 		
 		
@@ -48,6 +48,7 @@ public class DbQuery  {
 				a1= li.get(i);
 				System.out.println(a1.getActor_id()+ "--" + a1.getFirst_name() + "---"+a1.getLast_name()+"---"+a1.getLast_update());
 			}
+		return li;
 	}
 	
 	

@@ -14,17 +14,18 @@
   <servlet-name>home</servlet-name>
   <servlet-class>com.miniproject.servlet.LoginServlet</servlet-class>
   </servlet>
-
-    <servlet>
-  <servlet-name>dbact</servlet-name>
-  <servlet-class>com.miniproject.servlet.DbAction</servlet-class>
-  </servlet>
-
-  
-  <servlet-mapping>
+    <servlet-mapping>
   <servlet-name>home</servlet-name>
   <url-pattern>/login</url-pattern>
   </servlet-mapping>
+
+    <servlet>
+  <servlet-name>dbact</servlet-name>
+  <servlet-class>com.miniproject.servlet.DbActions</servlet-class>
+  </servlet>
+
+  
+
   
   <servlet-mapping>
   <servlet-name>dbact</servlet-name>

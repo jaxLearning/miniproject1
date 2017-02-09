@@ -8,7 +8,7 @@
 </head>
 <body>
 <div>
-<h1 align="center"> <b><big><pre>Mallik Mini-Project</pre></big></b></h1>
+<h1 align="center"> <b><big> <pre>Mallik Mini-Project</pre></big></b></h1>
 </div>
 <div align="center">
 

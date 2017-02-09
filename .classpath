@@ -11,6 +11,7 @@
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="E:/Mallik_Workspace/apache-tomcat-8.5.9-windows-x64/apache-tomcat-8.5.9/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s0904/Downloads/MyFiles/apache-tomcat-8.5.9-windows-x86/apache-tomcat-8.5.9/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s0904/Downloads/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
