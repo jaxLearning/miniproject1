@@ -15,8 +15,8 @@
 <form action="login" method = "get">
 			Username:  <input align="left" name="uname">
 			<br><br>
-			Password: <input type="password" style="width: 156px; " align="left" name="pwd"><br><br><input
-				type="submit" align="left" style="text-align: center; width: 127px" alt="Login" title="Login" value="Login">
+			Password: <input type="password" style="width: 156px; " align="left" name="pwd"><br><br>
+			<input type="submit" align="left" style="text-align: center; width: 127px" alt="Login" title="Login" value="Login">
 		</form></div>
 
 

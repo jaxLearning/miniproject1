@@ -15,12 +15,14 @@
 </div>
 
 <div>
-<form>
+<form action = "dbaction" method = "get">
 		Actor First Name:	<input name="fname">
-		
 		<br><br>Actor Last Name: <input name = "lname"><br><br><br> 
-		<input type="submit" value="Search">
-		
+		<input type="submit" value="Search Actor">
+		<input type="submit" value="Create Actor">
+		<input type="submit" value = "Update Actor">
+		<input type="submit" value = "Delete Actor">
+
 		</form></div>
 		
 <div>
@@ -33,8 +35,8 @@
 </tr><br>
 <tbody>
 <tr>
-<% String results= (String)request.getAttribute("results") %>
-<%=results %>
+<% String sresults= (String)request.getAttribute("search"); %>
+<%=sresults %>
 </tr>
 </tbody>
 </table>
